@@ -3,8 +3,14 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#credentials file
+notebooks/credentials.py
+
 # C extensions
 *.so
+
+# Data too large
+data/hubNashville__311__Service_Requests.csv
 
 # Distribution / packaging
 .Python
