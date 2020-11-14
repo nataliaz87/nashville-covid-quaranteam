@@ -131,3 +131,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#credentials file
+notebooks/credentials.py
+
+#data
+data/
+*data
+*.csv
+*.xlsx
