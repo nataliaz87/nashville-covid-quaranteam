@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6ed96f8c2cc2400d81f793fbb6f5b04a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6ed96f8c2cc2400d81f793fbb6f5b04a" ></div>
+        
+</body>
+<script>    
+    
+            var map_6ed96f8c2cc2400d81f793fbb6f5b04a = L.map(
+                "map_6ed96f8c2cc2400d81f793fbb6f5b04a",
+                {
+                    center: [36.247802, -86.716847],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6793b0e6e6fd466e99e9b811c8601835 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+            var tile_layer_9f34e5ae6bb54c3e9b46bb15af6ed83c = L.tileLayer(
+                "MapQuest Open Aerial",
+                {"attribution": "\u003ca href=https://endless-sky.github.io/\u003eEndless Sky\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+            var circle_5b6288a4e0074f29baed6927719b447b = L.circle(
+                [36.0352, -86.61050999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_836e4f70ee6c41208653a1c4f4b9ad70 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_76da011594314896b3400505500b246b = $(`<div id="html_76da011594314896b3400505500b246b" style="width: 100.0%; height: 100.0%;"><strong>City:  ANTIOCH&nbsp;&nbsp
+ Zip Code: 37013&nbsp;&nbsp;
+ COVID Violations: 1</strong></div>`)[0];
+            popup_836e4f70ee6c41208653a1c4f4b9ad70.setContent(html_76da011594314896b3400505500b246b);
+        
+
+        circle_5b6288a4e0074f29baed6927719b447b.bindPopup(popup_836e4f70ee6c41208653a1c4f4b9ad70)
+        ;
+
+        
+    
+    
+            circle_5b6288a4e0074f29baed6927719b447b.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :1</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c66abcba851b429196dd78555723c545 = L.circle(
+                [36.3001554277659, -86.70002393424511],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_0927a3bc2627493189aa8a85cb877f6e = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_78f72c0cabce4050ba94d7d5df4f491a = $(`<div id="html_78f72c0cabce4050ba94d7d5df4f491a" style="width: 100.0%; height: 100.0%;"><strong>City:  GOODLETTSVILLE&nbsp;&nbsp
+ Zip Code: 37072&nbsp;&nbsp;
+ COVID Violations: 1</strong></div>`)[0];
+            popup_0927a3bc2627493189aa8a85cb877f6e.setContent(html_78f72c0cabce4050ba94d7d5df4f491a);
+        
+
+        circle_c66abcba851b429196dd78555723c545.bindPopup(popup_0927a3bc2627493189aa8a85cb877f6e)
+        ;
+
+        
+    
+    
+            circle_c66abcba851b429196dd78555723c545.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :1</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a89e3e211c3d437880a5e925550451e3 = L.circle(
+                [36.20671806162548, -86.60680695674591],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_49cfb90b78774ed3b0ced6a1cf452e87 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_c2ce224ed42f48a192e4b7098a300738 = $(`<div id="html_c2ce224ed42f48a192e4b7098a300738" style="width: 100.0%; height: 100.0%;"><strong>City:  HERMITAGE&nbsp;&nbsp
+ Zip Code: 37076&nbsp;&nbsp;
+ COVID Violations: 2</strong></div>`)[0];
+            popup_49cfb90b78774ed3b0ced6a1cf452e87.setContent(html_c2ce224ed42f48a192e4b7098a300738);
+        
+
+        circle_a89e3e211c3d437880a5e925550451e3.bindPopup(popup_49cfb90b78774ed3b0ced6a1cf452e87)
+        ;
+
+        
+    
+    
+            circle_a89e3e211c3d437880a5e925550451e3.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :2</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9a53352c98ca49898e35d768f343088a = L.circle(
+                [36.2550659, -86.67257690000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_57a5a28a63db4b97ac603a2b485c947c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_032c25505f194171a0381a07e18470d6 = $(`<div id="html_032c25505f194171a0381a07e18470d6" style="width: 100.0%; height: 100.0%;"><strong>City:  MADISON&nbsp;&nbsp
+ Zip Code: 37115&nbsp;&nbsp;
+ COVID Violations: 1</strong></div>`)[0];
+            popup_57a5a28a63db4b97ac603a2b485c947c.setContent(html_032c25505f194171a0381a07e18470d6);
+        
+
+        circle_9a53352c98ca49898e35d768f343088a.bindPopup(popup_57a5a28a63db4b97ac603a2b485c947c)
+        ;
+
+        
+    
+    
+            circle_9a53352c98ca49898e35d768f343088a.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :1</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5e658074aed64b3b8efe3476a448023c = L.circle(
+                [36.161531061606226, -86.77637390674592],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_bdb7d2cdd50643c4a1205015622e81b1 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_bb028b8dfd114c0c813263d4c344254a = $(`<div id="html_bb028b8dfd114c0c813263d4c344254a" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37201&nbsp;&nbsp;
+ COVID Violations: 1</strong></div>`)[0];
+            popup_bdb7d2cdd50643c4a1205015622e81b1.setContent(html_bb028b8dfd114c0c813263d4c344254a);
+        
+
+        circle_5e658074aed64b3b8efe3476a448023c.bindPopup(popup_bdb7d2cdd50643c4a1205015622e81b1)
+        ;
+
+        
+    
+    
+            circle_5e658074aed64b3b8efe3476a448023c.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :1</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2b83a0f5a2a4427c9ba1e2b268b842ba = L.circle(
+                [36.15455411575997, -86.78747240505726],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 910.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_b083073574b24593ae4dd43649296c26 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_a987b7edbb544d9f85d05f0cb5575fe0 = $(`<div id="html_a987b7edbb544d9f85d05f0cb5575fe0" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37203&nbsp;&nbsp;
+ COVID Violations: 13</strong></div>`)[0];
+            popup_b083073574b24593ae4dd43649296c26.setContent(html_a987b7edbb544d9f85d05f0cb5575fe0);
+        
+
+        circle_2b83a0f5a2a4427c9ba1e2b268b842ba.bindPopup(popup_b083073574b24593ae4dd43649296c26)
+        ;
+
+        
+    
+    
+            circle_2b83a0f5a2a4427c9ba1e2b268b842ba.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :13</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a4a00b7eda8b4ab6b93af54e152f5912 = L.circle(
+                [36.108309999999996, -86.76576],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_e029d9ece2954f42adf066a16bdee86c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_43cbba9515924cd3a60c5dae20a553f1 = $(`<div id="html_43cbba9515924cd3a60c5dae20a553f1" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37204&nbsp;&nbsp;
+ COVID Violations: 1</strong></div>`)[0];
+            popup_e029d9ece2954f42adf066a16bdee86c.setContent(html_43cbba9515924cd3a60c5dae20a553f1);
+        
+
+        circle_a4a00b7eda8b4ab6b93af54e152f5912.bindPopup(popup_e029d9ece2954f42adf066a16bdee86c)
+        ;
+
+        
+    
+    
+            circle_a4a00b7eda8b4ab6b93af54e152f5912.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :1</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8f0491008c5f4c7cb2614c7620742ca7 = L.circle(
+                [36.126457099999996, -86.845508],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_750299fd2910487aa08e5015c7121815 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_25cb81e959fa4423a4636512be24393a = $(`<div id="html_25cb81e959fa4423a4636512be24393a" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37205&nbsp;&nbsp;
+ COVID Violations: 1</strong></div>`)[0];
+            popup_750299fd2910487aa08e5015c7121815.setContent(html_25cb81e959fa4423a4636512be24393a);
+        
+
+        circle_8f0491008c5f4c7cb2614c7620742ca7.bindPopup(popup_750299fd2910487aa08e5015c7121815)
+        ;
+
+        
+    
+    
+            circle_8f0491008c5f4c7cb2614c7620742ca7.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :1</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c4b422f751ac45cfa8d79f4e0719516c = L.circle(
+                [36.154644299999994, -86.7847766],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_3c8677107dca49d1ab38a567d4058dbb = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_c74b04d997d74d8daf60268f98f0dbbb = $(`<div id="html_c74b04d997d74d8daf60268f98f0dbbb" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37206&nbsp;&nbsp;
+ COVID Violations: 1</strong></div>`)[0];
+            popup_3c8677107dca49d1ab38a567d4058dbb.setContent(html_c74b04d997d74d8daf60268f98f0dbbb);
+        
+
+        circle_c4b422f751ac45cfa8d79f4e0719516c.bindPopup(popup_3c8677107dca49d1ab38a567d4058dbb)
+        ;
+
+        
+    
+    
+            circle_c4b422f751ac45cfa8d79f4e0719516c.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :1</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6aca1c68db4a49fe95aa2006dd185ed1 = L.circle(
+                [36.22575302328566, -86.77325067453015],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_5ef8ab3fac3f4673bb85ea3fcdf2ab5e = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_b9befed14d91416f9b6fc9830a187624 = $(`<div id="html_b9befed14d91416f9b6fc9830a187624" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37207&nbsp;&nbsp;
+ COVID Violations: 5</strong></div>`)[0];
+            popup_5ef8ab3fac3f4673bb85ea3fcdf2ab5e.setContent(html_b9befed14d91416f9b6fc9830a187624);
+        
+
+        circle_6aca1c68db4a49fe95aa2006dd185ed1.bindPopup(popup_5ef8ab3fac3f4673bb85ea3fcdf2ab5e)
+        ;
+
+        
+    
+    
+            circle_6aca1c68db4a49fe95aa2006dd185ed1.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :5</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7c5cd88dac6941199ef9222f684de66e = L.circle(
+                [36.181439555806776, -86.79030395337294],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_2d58fd95a699402c853e8026848902d8 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_36737b1fe1134ca4b74394a06cb225c8 = $(`<div id="html_36737b1fe1134ca4b74394a06cb225c8" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37208&nbsp;&nbsp;
+ COVID Violations: 2</strong></div>`)[0];
+            popup_2d58fd95a699402c853e8026848902d8.setContent(html_36737b1fe1134ca4b74394a06cb225c8);
+        
+
+        circle_7c5cd88dac6941199ef9222f684de66e.bindPopup(popup_2d58fd95a699402c853e8026848902d8)
+        ;
+
+        
+    
+    
+            circle_7c5cd88dac6941199ef9222f684de66e.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :2</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d7ba21f468e84c779f1ab81e16182e42 = L.circle(
+                [36.1393315, -86.8853771],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_4f5629a91eb6453e95aa07eb37e6efcf = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_b30b0ed27211477d8af84bb9d0820323 = $(`<div id="html_b30b0ed27211477d8af84bb9d0820323" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37209&nbsp;&nbsp;
+ COVID Violations: 1</strong></div>`)[0];
+            popup_4f5629a91eb6453e95aa07eb37e6efcf.setContent(html_b30b0ed27211477d8af84bb9d0820323);
+        
+
+        circle_d7ba21f468e84c779f1ab81e16182e42.bindPopup(popup_4f5629a91eb6453e95aa07eb37e6efcf)
+        ;
+
+        
+    
+    
+            circle_d7ba21f468e84c779f1ab81e16182e42.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :1</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f4ca759004f44d59b262245c63a5c882 = L.circle(
+                [36.1540588, -86.769025],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_c4502e8b495249aa9babedb613bea5a0 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_84ea314f1d4148eb8e4cf2bbfb96f7cf = $(`<div id="html_84ea314f1d4148eb8e4cf2bbfb96f7cf" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37210&nbsp;&nbsp;
+ COVID Violations: 1</strong></div>`)[0];
+            popup_c4502e8b495249aa9babedb613bea5a0.setContent(html_84ea314f1d4148eb8e4cf2bbfb96f7cf);
+        
+
+        circle_f4ca759004f44d59b262245c63a5c882.bindPopup(popup_c4502e8b495249aa9babedb613bea5a0)
+        ;
+
+        
+    
+    
+            circle_f4ca759004f44d59b262245c63a5c882.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :1</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f78591749a6f4e2f803903e1ab325a8c = L.circle(
+                [36.05919333077864, -86.75059565337295],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_313cdae8b78c413e95d3f530edad2b1c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_fda9d22294154b81b0af787160eb22f6 = $(`<div id="html_fda9d22294154b81b0af787160eb22f6" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37211&nbsp;&nbsp;
+ COVID Violations: 2</strong></div>`)[0];
+            popup_313cdae8b78c413e95d3f530edad2b1c.setContent(html_fda9d22294154b81b0af787160eb22f6);
+        
+
+        circle_f78591749a6f4e2f803903e1ab325a8c.bindPopup(popup_313cdae8b78c413e95d3f530edad2b1c)
+        ;
+
+        
+    
+    
+            circle_f78591749a6f4e2f803903e1ab325a8c.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :2</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c665de8c93bb4e0abd990b22e611a6fe = L.circle(
+                [36.186967433333336, -86.67224956666666],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_6136aaf57c7f40f583e4fa88f90043ae = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_f7d9f8388aea4a6780a003c28d992423 = $(`<div id="html_f7d9f8388aea4a6780a003c28d992423" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37214&nbsp;&nbsp;
+ COVID Violations: 3</strong></div>`)[0];
+            popup_6136aaf57c7f40f583e4fa88f90043ae.setContent(html_f7d9f8388aea4a6780a003c28d992423);
+        
+
+        circle_c665de8c93bb4e0abd990b22e611a6fe.bindPopup(popup_6136aaf57c7f40f583e4fa88f90043ae)
+        ;
+
+        
+    
+    
+            circle_c665de8c93bb4e0abd990b22e611a6fe.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :3</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_dfcdfcbbca3645cc961f0ae4ef4c413d = L.circle(
+                [36.1072222, -86.8158333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_83dc9c5cbda54760ac7c12294cd15055 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_44ffc81c11a14d0f84f044190e2c5137 = $(`<div id="html_44ffc81c11a14d0f84f044190e2c5137" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37215&nbsp;&nbsp;
+ COVID Violations: 1</strong></div>`)[0];
+            popup_83dc9c5cbda54760ac7c12294cd15055.setContent(html_44ffc81c11a14d0f84f044190e2c5137);
+        
+
+        circle_dfcdfcbbca3645cc961f0ae4ef4c413d.bindPopup(popup_83dc9c5cbda54760ac7c12294cd15055)
+        ;
+
+        
+    
+    
+            circle_dfcdfcbbca3645cc961f0ae4ef4c413d.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :1</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_40fc03548dad492aa779a08e011cb405 = L.circle(
+                [36.20389317240708, -86.7139221355319],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_162960931f2046b98bdcfae16acdff8a = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_170eeb8692614a6bb2726f19faefaae6 = $(`<div id="html_170eeb8692614a6bb2726f19faefaae6" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37216&nbsp;&nbsp;
+ COVID Violations: 1</strong></div>`)[0];
+            popup_162960931f2046b98bdcfae16acdff8a.setContent(html_170eeb8692614a6bb2726f19faefaae6);
+        
+
+        circle_40fc03548dad492aa779a08e011cb405.bindPopup(popup_162960931f2046b98bdcfae16acdff8a)
+        ;
+
+        
+    
+    
+            circle_40fc03548dad492aa779a08e011cb405.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :1</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e111f120382747b4a4fe322611fbb4b0 = L.circle(
+                [36.102130283686165, -86.64932534831354],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 400.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_d1b4db1ccb574c9f8bb20c5b670dc556 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_2295edb1e44848b6b51e658c14eaf1ce = $(`<div id="html_2295edb1e44848b6b51e658c14eaf1ce" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37217&nbsp;&nbsp;
+ COVID Violations: 4</strong></div>`)[0];
+            popup_d1b4db1ccb574c9f8bb20c5b670dc556.setContent(html_2295edb1e44848b6b51e658c14eaf1ce);
+        
+
+        circle_e111f120382747b4a4fe322611fbb4b0.bindPopup(popup_d1b4db1ccb574c9f8bb20c5b670dc556)
+        ;
+
+        
+    
+    
+            circle_e111f120382747b4a4fe322611fbb4b0.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :4</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a5882b70f7ed4014a06795acef28b4c2 = L.circle(
+                [36.163000000000004, -86.78200000000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_d5b11dce266d481c8c2f3192095e68f6 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_80129665cb8f4b339b7d125f5ab26999 = $(`<div id="html_80129665cb8f4b339b7d125f5ab26999" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37219&nbsp;&nbsp;
+ COVID Violations: 1</strong></div>`)[0];
+            popup_d5b11dce266d481c8c2f3192095e68f6.setContent(html_80129665cb8f4b339b7d125f5ab26999);
+        
+
+        circle_a5882b70f7ed4014a06795acef28b4c2.bindPopup(popup_d5b11dce266d481c8c2f3192095e68f6)
+        ;
+
+        
+    
+    
+            circle_a5882b70f7ed4014a06795acef28b4c2.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :1</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0018f7ea10914c398ac703bfbd0a928c = L.circle(
+                [36.07075, -86.94789],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_623310a0596d4b46a33130ee02476cda = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_9d5fda0543ed453b92c83b9934f348fc = $(`<div id="html_9d5fda0543ed453b92c83b9934f348fc" style="width: 100.0%; height: 100.0%;"><strong>City:  NASHVILLE&nbsp;&nbsp
+ Zip Code: 37221&nbsp;&nbsp;
+ COVID Violations: 1</strong></div>`)[0];
+            popup_623310a0596d4b46a33130ee02476cda.setContent(html_9d5fda0543ed453b92c83b9934f348fc);
+        
+
+        circle_0018f7ea10914c398ac703bfbd0a928c.bindPopup(popup_623310a0596d4b46a33130ee02476cda)
+        ;
+
+        
+    
+    
+            circle_0018f7ea10914c398ac703bfbd0a928c.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :1</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_70510428a3214765a74cad72da786c45 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 400.0, "stroke": true, "weight": 3}
+            ).addTo(map_6ed96f8c2cc2400d81f793fbb6f5b04a);
+        
+    
+        var popup_baaacf6dd13d468c89190c8371d7e08f = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_2ca2666877064ea1a250c86637d74718 = $(`<div id="html_2ca2666877064ea1a250c86637d74718" style="width: 100.0%; height: 100.0%;"><strong>City:  UNKNOWN&nbsp;&nbsp
+ Zip Code: 99999&nbsp;&nbsp;
+ COVID Violations: 4</strong></div>`)[0];
+            popup_baaacf6dd13d468c89190c8371d7e08f.setContent(html_2ca2666877064ea1a250c86637d74718);
+        
+
+        circle_70510428a3214765a74cad72da786c45.bindPopup(popup_baaacf6dd13d468c89190c8371d7e08f)
+        ;
+
+        
+    
+    
+            circle_70510428a3214765a74cad72da786c45.bindTooltip(
+                `<div>
+                     <strong>COVID Violations :4</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
